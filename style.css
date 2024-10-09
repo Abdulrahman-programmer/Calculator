@@ -1,0 +1,87 @@
+*
+{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: #ff0000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    background-color:#142f44;
+    height: 100%;
+    width: 500px;
+    /* border: 5px solid black; */
+    
+}
+#display
+{
+    padding-right: 10px;
+    height: 30%;
+    background-color: 	#205b7a;
+    border-radius: 5%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: xxx-large;
+    color: rgb(228, 236, 242);
+}
+#btns
+{
+    height: 70%;
+    background-color: 	#205b7a;
+}
+.row{
+    margin: 0;
+    padding: 0;
+    height: 20%;
+    background-color:#142f44 ;
+    /* border: 2px solid rgb(16, 231, 52); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input
+{
+    margin: 1.6%;
+    width: 22%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: #1d3849;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 50px;
+    color: aliceblue;
+}
+.input svg{
+    height: 50%;
+    width: 50%;
+}
+#operation
+{
+    background-color: #11699874;
+}
+
+/* to make responsive */
+@media only screen and (max-width: 600px) {
+   #main{
+    width: 100%;
+   }
+   .input{
+    font-size:300%;
+    overflow: hidden;
+   }
+}
+.input:hover{
+    box-shadow: 0 0 10px;
+}
