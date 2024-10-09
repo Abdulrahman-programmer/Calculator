@@ -1,33 +1,33 @@
 let display = document.getElementById("display")
 function one() {
-    display.textContent+="1"
+    display.textContent += "1"
 }
 function two() {
-    display.textContent+="2"
+    display.textContent += "2"
 }
 function three() {
-    display.textContent+="3"
+    display.textContent += "3"
 }
 function four() {
-    display.textContent+="4"
+    display.textContent += "4"
 }
 function five() {
-    display.textContent+="5"
+    display.textContent += "5"
 }
 function six() {
-    display.textContent+="6"
+    display.textContent += "6"
 }
 function seven() {
-    display.textContent+="7"
+    display.textContent += "7"
 }
 function eight() {
-    display.textContent+="8"
+    display.textContent += "8"
 }
 function nine() {
-    display.textContent+="9"
+    display.textContent += "9"
 }
 function zero() {
-    display.textContent+="0"
+    display.textContent += "0"
 }
 function dot() {
     if (!display.textContent.includes(".")) {
@@ -35,49 +35,49 @@ function dot() {
     }
 }
 function allClear() {
-    display.textContent =""
+    display.textContent = ""
 }
 function plus() {
-   if (display.textContent) {
-     display.textContent+="+"
-   }
+    if (display.textContent) {
+        display.textContent += "+"
+    }
 }
 function minus() {
     if (display.textContent) {
-        display.textContent+="-"
-      }
+        display.textContent += "-"
+    }
 }
 function multiply() {
     if (display.textContent) {
-        display.textContent+="×"
-      }
+        display.textContent += "×"
+    }
 }
 function division() {
     if (display.textContent) {
-        display.textContent+="/"
-      }
+        display.textContent += "/"
+    }
 }
 function percent() {
     if (display.textContent) {
-        display.textContent+="%"
-      }
-}
-function dlt(){
-    display.textContent = (display.textContent).slice(0,-1)
-}
-function result() {
-    function result() {
-        try {
-            let sum = display.textContent.replace("×","*")
-            display.textContent = eval(sum)
-            
-        } catch (error) {
-            display.textContent = "ERROR"
-        }
-        
+        display.textContent += "%"
     }
-    
 }
+function dlt() {
+    display.textContent = (display.textContent).slice(0, -1)
+}
+
+function result() {
+    try {
+        let sum = display.textContent.replace("×", "*")
+        display.textContent = eval(sum)
+
+    } catch (error) {
+        display.textContent = "ERROR"
+    }
+
+}
+
+
 let openParenthesis = true
 
 function addParenthesis() {
