@@ -66,12 +66,15 @@ function dlt(){
     display.textContent = (display.textContent).slice(0,-1)
 }
 function result() {
-    try {
-        let sum= display.textContent.replace('×', '*');
-        display.textContent = eval(expression);
+    function result() {
+        try {
+            let sum = display.textContent.replace("×","*")
+            display.textContent = eval(sum)
+            
+        } catch (error) {
+            display.textContent = "ERROR"
+        }
         
-    } catch (error) {
-        display.textContent = "ERROR"
     }
     
 }
