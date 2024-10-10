@@ -1,4 +1,14 @@
 let display = document.getElementById("display")
+let btn = document.getElementsByClassName("input")
+btn.addEventListener("click",
+    function()
+    {
+        if(display.textContent === "ERROR")
+        {
+            display.textContent.clear() 
+        }
+    }
+)
 function one() {
     display.textContent += "1"
 }
