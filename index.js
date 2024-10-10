@@ -5,7 +5,7 @@ btn.addEventListener("click",
     {
         if(display.textContent === "ERROR")
         {
-            display.textContent.clear() 
+            display.textContent = "" 
         }
     }
 )
